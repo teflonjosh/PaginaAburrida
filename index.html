@@ -1,0 +1,116 @@
+<!doctype HMTL>
+    <html>
+        <head>
+            <title>¿aburrido?</title>
+        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/35/Picayune_Frog_Waiter_1902.jpg">
+            <style> 
+        body { 
+            background-color: #f0f1f1;
+            color:black;
+            display: block;
+            text-align: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 25px;}
+        p:hover {
+            color:Turquoise ;
+            font-size:16px;
+            text-decoration: underline;
+            font-style: italic;}
+        #left {
+            display: block;
+            text-align: center;
+            margin-right: 175px;
+            margin-left: 5px;}
+        Button {
+            box-shadow: 2px 3px 0px 0px #899599;
+            background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+            background-color: #ededed;
+            border-radius: 10px;
+            border: 1px solid #d6bcd6;
+            display: inline-block;
+            color: #3a8a9e;
+            font-family: Arial;
+            font-size: 12px;
+            padding: 5px 14px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #e1e2ed;}
+                    button:hover {
+                    font-size: 20px;}
+        img {
+            border-radius: 25px;
+            height: 200px;
+            width: 200px;}
+        marquee {
+            text-align: center}
+        footer {
+            font-size: 8px; }
+        </style>
+            </head>
+        <body>
+    <section class="main">
+        <p><marquee direction="up" height="50" width="auto" scrollamount="2">
+            Are you bored?
+                <br><br><br>
+            ¿Estas aburrido?</marquee></p>
+
+    <div id="left"> 
+        <p><marquee direction="up" height="50" width="auto" scrollamount="2">
+            Then click away your boredom!
+                <br><br><br>
+            Hasta que no aburras, ¡clic!</marquee></p>
+            </div>
+    </section>
+        <br>
+    <section>
+        <p><button onclick="document.body.style.backgroundColor = 'green';">Green</button></p>
+            <div id="left">  
+        <p><button onclick="document.body.style.backgroundColor = 'blue';">Blue</button></p>
+            </div> 
+        <p><button onclick="document.body.style.backgroundColor = 'red';">Red</button></p>
+            <div id="left">   
+        <p><button onclick="document.body.style.backgroundColor = 'pink';">Pink</button></p>
+            </div> 
+     <script>
+        function myFunction() {
+          alert("Color out of order and pending shipment. Please try again tomorrow.");
+        }
+    </script>
+
+        <p><button onclick="myFunction()">Yellow</button></p>
+    <div id="left">  
+        <p><button onclick="changeColor()">???</button></p>
+    </div>
+</section>
+
+<script>
+    function getRandom() {
+    let numbers= '0123456789';
+        let color = '';
+    for (let i=0; i < 6; i++) {
+        color += numbers[Math.floor(Math.random() * 10)];
+        }
+    return color;
+    }
+        function changeColor(){
+            let newColor = getRandom();
+            document.body.style.backgroundColor = newColor;
+        }
+</script>
+        <p><button onclick="document.body.style.backgroundColor = 'purple';">Purple</button></p>
+    <div id="left">   
+        <p><button onclick="document.body.style.backgroundColor = 'orange';">Orange</button></p>
+    </div> 
+        <p><button onclick="document.body.style.backgroundColor = 'gray';">Gray</button></p>
+    <div id="left">   
+        <p><button onclick="document.body.style.backgroundColor = 'white';">White</button></p>
+    </div>
+        <p><button onclick="document.body.style.backgroundColor = 'black';">Black</button></p>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Picayune_Frog_Waiter_1902.jpg/256px-Picayune_Frog_Waiter_1902.jpg">
+           
+        <footer>
+            <p><em>Image used on page is by <a href="https://commons.wikimedia.org/wiki/File:Picayune_Frog_Waiter_1902.jpg">Louis A. Winterhalder</a>, Public domain, via Wikimedia Commons</em></p>
+        </footer>
+    </body>
+</html>
